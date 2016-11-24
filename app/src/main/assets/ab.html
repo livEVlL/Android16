@@ -1,0 +1,27 @@
+<script>
+    function click1(){
+        var here = document.getElementById('here');
+        here.innerHTML = parseInt(Math.random()*49+1);
+    }
+    function test1(urname){
+        var here = document.getElementById('here');
+        here.innerHTML = "Hello, " + urname;
+    }
+    function test2(){
+        //var here = document.getElementById('here');
+        var urname = document.getElementById('urname');
+        //here.innerHTML = urname.value;
+
+         brad.showUrName(urname.value);
+
+    }
+</script>
+<h1 style="background-color:yellow">Brad Big Company</h1>
+<hr />
+Hello, World<br />
+<input type='button' onclick='click1()' value='Click1' /><br />
+<input type='button' onclick='test1("Brad")' value='Click2' /><br />
+<input type='text' id='urname' />
+<input type='button' onclick='test2()' value="Click3" /><br />
+<div id='here'></div>
+<a href='http://tw.yahoo.com'>Yahoo</a>>
